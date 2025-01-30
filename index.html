@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Store</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+        .sora{
+            font-family: "Sora", serif;
+            }
+
+        .adlam{
+            font-family: "ADLaM Display", serif;
+            }
+
+
+    </style>
+        
 </head>
 <body>
-    <header>
+    <header class="bg-[#FFF9F4] sora">
+        <!-- nav section starts here  -->
+        <div class="navbar px-3 sm:px-7 md:px-14 lg:px-20 xl:px-25 2xl:px-36 border-b-2 border-b-[#1E1E1E] lg:border-none">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-2xl font-normal"><img src="c1-assets/logo-header.png" alt=""><span class="hidden md:flex lg:hidden xl:flex">Browse<span class="text-[#FFDC26]">4</span>Pets</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[#111111] text-xl font-normal">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="button hidden lg:flex flex-row justify-between gap-5">
+                <a class="btn bg-[#FFF9F4] border-none shadow-none px-0 w-5 h-6"><i class="fa-regular fa-bell text-[#111111]"></i></a>
+                <a class="btn bg-[#FFF9F4] border-none shadow-none px-0 w-5 h-6"><i class="fa-solid fa-magnifying-glass text-[#000000]"></i></i></a>
+                <button class="btn bg-[#FFF9F4] text-[#111111] border-[#FFDC26] text-xl font-normal">Login</button>
+                <button class="btn bg-[#FFDC26] text-[#111111] text-xl font-normal">Register</button>
+              </div>
+              <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost px-1 py-2 w-8 h-8">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul tabindex="0" class="flex flex-col justify-start items-start absolute -left-20 bg-[#FFF9F4] menu menu-sm dropdown-content px-1 text-[#111111] text-xl font-normal rounded-box z-[1] mt-3 p-2 shadow">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                    <li><a>Login</a></li>
+                    <li><a>Register</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- nav section ends here  -->
 
+        <!-- banner section starts here  -->
+         <div class="bg-[#FFFFFF]">
+            <div class="pt-20 px-3 sm:px-7 md:px-14 lg:px-20 xl:px-25 2xl:px-36">
+                <div class="flex flex-col justify-start items-start gap-5">
+                    <h1 class="adlam text-[#111111] text-3xl sm:text-6xl font-normal lg:w-1/2 z-10">Pamper Your Pet, Because They Deserve the Best</h1>
+                    <p class="text-[#111111] text-base sm:text-xl font-normal lg:w-1/2 z-10">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="btn bg-[#FFDC26] text-[#111111] text-base sm:text-xl font-normal z-10">Find a pet</button>
+                </div>
+                <img src="c1-assets/cat-big.png" alt="" class="w-4/5 absolute top-80 sm:top-96 md:top-80 lg:top-60 xl:top-24 z-0">
+             </div>
+         </div>
+        <!-- banner section ends here  -->
     </header>
 
     <main>
-        <h2>I am MD. Mahfuzul Alam</h2>
     </main>
 
     <footer>
-
     </footer>
 </body>
 </html>
