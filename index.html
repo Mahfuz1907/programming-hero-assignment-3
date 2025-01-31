@@ -203,7 +203,7 @@
                         <p class="text-base font-medium">$39.99</p>
                     </div>
                 </div>
-                <div class="w-20 h-24 sm:h-20 my-auto bg-[#FFF9F4] flex justify-center items-center">
+                <div class="flex flex-row gap-2.5 card bg-[#FFFFFF] py-3 pl-3 pr-6">
                     <div class="w-20 h-20 bg-[#FFF9F4] flex justify-center items-center">
                         <img src="c1-assets/bird-cartoon.png" alt="">
                     </div>
@@ -338,12 +338,12 @@
         <!-- Price section ends  -->
 
         <!-- news section starts  -->
-         <div class="news sora px-3 sm:px-7 md:px-14 lg:px-20 xl:px-25 2xl:px-36 mt-52 mb-40">
-            <div class="flex flex-row card justify-start items-center gap-10 py-10 bg-[#FFF9F4] px-24">
+         <div class="news sora absolute top-[500rem] lg:top-[325rem] xl:top-[275rem] px-3 sm:px-7 md:px-14 lg:px-20 xl:px-25 2xl:px-36 mt-52 w-full">
+            <div class="flex flex-col lg:flex-row card justify-start items-center gap-10 py-10 bg-[#FFF9F4] lg:px-24">
                 <img src="c1-assets/cute-pet-mid.png" alt="">
-                <div class="flex flex-col justify-start items-start gap-7">
-                    <h1 class="text-[#111111] text-4xl font-normal adlam">Get Pawsome News!</h1>
-                    <p class="text-[#111111] text-base font-normal">Exclusive training tips, ticks, product deals and more.</p>
+                <div class="flex flex-col justify-center lg:justify-start items-center lg:items-start gap-7">
+                    <h1 class="text-[#111111] text-4xl font-normal adlam text-center lg:text-left">Get Pawsome News!</h1>
+                    <p class="text-[#111111] text-base font-normal text-center lg:text-left">Exclusive training tips, ticks, product deals and more.</p>
                     <input type="email" placeholder="Enter email" class="placeholder-[#C4C4C4] w-11/12 py-3 pl-5">
                     <button class="btn bg-[#FFDC26] text-[#111111] text-base font-normal">Subscribe</button>
                 </div>
@@ -352,7 +352,30 @@
         <!-- news section ends  -->
     </main>
 
-    <footer>
+    <footer class="bg-[#FFDC2680] mt-[32rem] md:mt-[32rem] lg:mt-[26rem] xl:mt-96 sora">
+        <div class="flex flex-col gap-10 lg:flex-row justify-between items-start pt-[30rem] lg:pt-80 pb-32 px-3 sm:px-7 md:px-14 lg:px-20 xl:px-25 2xl:px-36">
+            <div class="flex flex-col justify-start items-start gap-3">
+                <div class="flex flex-row gap-3 justify-between items-center">
+                    <img src="c1-assets/logo-footer.png" alt="">
+                    <h1 class="text-2xl font-normal text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+                </div>
+                <p class="text-xl font-normal text-[#111111B3]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+            <div class="flex flex-col justify-start items-start gap-3 text-[#111111] text-xl font-normal">
+                <h1>Find a pet</h1>
+                <h1>Breeds</h1>
+                <h1>Contact us</h1>
+            </div>
+            <div class="flex flex-col justify-start items-start gap-3 lg:gap-0 mt-4 lg:mt-12">
+                <h1 class="text-base font-medium text-[#111111]">Follow Us</h1>
+                <div class="flex flex-row justify-between items-center gap-5">
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div><i class="fa-brands fa-linkedin"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
